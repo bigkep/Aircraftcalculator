@@ -22,7 +22,7 @@ layout = html.Div(
             children=[
                 html.Div(
                     children=[
-                        html.H1("General Parameters Dashboard Calculator", style={"color": "white", "font-size": "20px", "color": "Blue"}),
+                        html.H1("General Parameters Dashboard Calculator", style={"color": "white", "font-size": "20px"}),
                     ],
                     style={"text-align": "center", "margin-top": "20px"}
                 ),
@@ -39,7 +39,7 @@ layout = html.Div(
                 ),
                 html.Div(
                     children=[
-                        html.Button('Calculate', id='calculate_button', style={"margin-top": "15px", "width": "50%"}),
+                        html.Button('Calculate', id='calculate_button', style={"margin-top": "15px", "width": "50%", "color": "Blue"}),
                     ],
                     style={"text-align": "center", "margin": "20px"}
                 ),
