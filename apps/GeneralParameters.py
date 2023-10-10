@@ -22,7 +22,7 @@ layout = html.Div(
             children=[
                 html.Div(
                     children=[
-                        html.H1("General Parameters Dashboard Calculator", style={"color": "white", "font-size": "20px"}),
+                        html.H1("General Parameters Dashboard Calculator", style={"color": "white", "font-size": "20px", "color": "Blue"}),
                     ],
                     style={"text-align": "center", "margin-top": "20px"}
                 ),

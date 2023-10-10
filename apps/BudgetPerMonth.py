@@ -41,7 +41,7 @@ layout = html.Div(
                 ),
                 html.Div(
                     children=[
-                        html.Button('Calculate', id='calculate_button', style={"margin-top": "15px", "width": "50%"}),
+                        html.Button('Calculate', id='calculate_button', style={"margin-top": "15px", "width": "50%", "color": "Blue"}),
                     ],
                     style={"text-align": "center", "margin": "20px"}
                 ),
