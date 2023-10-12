@@ -12,7 +12,7 @@ from app import app
 from app import server
 
 # Connect to your pages
-from apps import Home, GeneralParameters, OwnerHourlyCost, AnnualBudget, BudgetPerMonth, AnnualVariableCost, AnnualFixedCosts, PaymentSchedule
+from apps import Home, GeneralParameters, OwnerHourlyCost, AnnualBudget, BudgetPerMonth, AnnualVariableCost, AnnualFixedCosts, PaymentSchedule, BudgetByPercentage
 
 app.layout = html.Div([
     dcc.Location(id='url', refresh=True),
@@ -90,6 +90,13 @@ app.layout = html.Div([
                         active="exact",
                         className="pe-3"
                     ),
+                    dbc.NavLink([html.Div([
+                        html.I(className="fa-solid fa-database"),
+                        html.Span("BudgetByPercentage", style={'margin-top': '3px'})], className='icon_title')],
+                        href="/apps/BudgetByPercentage",
+                        active="exact",
+                        className="pe-3"
+                    ),
                     #dbc.NavLink([html.Div([
                     #    html.I(className="fa-solid fa-circle-info"),
                     #    html.Span("About", style={'margin-top': '3px'})], className='icon_title')],
@@ -128,6 +135,8 @@ def display_page(pathname):
         return AnnualFixedCosts.layout
     elif pathname == '/apps/PaymentSchedule':
         return PaymentSchedule.layout
+    elif pathname == '/apps/BudgetByPercentage':
+        return BudgetByPercentage.layout
     #elif pathname == '/apps/about':
         #return about.layout
 

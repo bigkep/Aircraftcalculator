@@ -108,7 +108,7 @@ def calculate_total_hours(n_clicks, Total_hours, total_hourly_cost_without_chart
     # Include the download button under the table
     result_with_download = html.Div([
         result,
-        html.A('Download Table', href=csv_string, download='owner_hourly_cost.csv'),
+        html.A('Download Table', href=csv_string, download='annual_budget.csv'),
         
     ], style={"text-align": "center"})
 
